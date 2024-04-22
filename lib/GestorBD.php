@@ -11,7 +11,17 @@ class GestorBD
 
     public function conectar()
     {
-        $this->conn = new mysqli("localhost","root","","gcd");
+        $conf = Configuracion::getInstance();
+        $s=$conf->getServidorBD();
+        $u=$conf->getUsuarioBD();
+        $p=$conf->getPasswordBD();
+        $n=$conf->getNombreBD();
+
+
+
+
+        $this->conn = new mysqli("$s","$u","$p","$n");
+        
         if($this->conn->connect_error!=null)
         {
             return  false;

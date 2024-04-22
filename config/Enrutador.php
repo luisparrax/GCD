@@ -8,8 +8,15 @@ class Enrutador
 
     public function getRuta()
     {
+        /*
         $partes=explode("/",$_SERVER["SCRIPT_NAME"]);
-        $ruta="/".$partes[1]."/";
+        $ruta="/".$partes[1]."/";*/
+
+        $conf = Configuracion::getInstance();
+
+
+        $ruta= $conf->getRutaServidor();
+        echo $ruta;
         return $ruta;
     }
 
