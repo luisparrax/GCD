@@ -38,10 +38,10 @@ class Configuracion
             {
                 //entorno local
                 $this->rutaServidor="servidordeproducciongcd.wuaze.com/";
-                $this->getServidorBD="localhost";
-                $this->UsuarioBD="root";
-                $this->passwordBD="";
-                $this->nombreBD="gcd";
+                $this->getServidorBD="sql305.infinityfree.com";
+                $this->UsuarioBD="if0_36408861";
+                $this->passwordBD="Q3hsqHTSKt5RMJH";
+                $this->nombreBD="if0_36408861_produccion";
 
             }
         }
