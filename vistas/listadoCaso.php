@@ -61,10 +61,11 @@
   <!-- listado tickets -->
 
 </main>
+<?php
+  include "./vistas/inc/footer.php";
+?>
 </body>
 
 <!-- fin cuerpo-->
 
-<?php
-  include "./vistas/inc/footer.php";
-?>
+

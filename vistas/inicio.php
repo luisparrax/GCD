@@ -40,10 +40,11 @@
   <!-- fin inicio -->
 
 </main>
-</body>
-
-<!-- fin cuerpo-->
-
 <?php
   include "./vistas/inc/footer.php";
 ?>
+</body>
+</html>
+<!-- fin cuerpo-->
+
+

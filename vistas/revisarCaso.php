@@ -23,6 +23,11 @@ include "./vistas/inc/header.php";
 
   <!-- Mis tickets -->
   <br><br><br>
+  <div  class="tab">
+  <div class="col-md-10 mx-auto col-lg-5 pt-5 pt-md-7">
+  <p class="text-center h3 bg-light text-dark rounded-3 "  style="--bs-bg-opacity: .5;">INSERTE EL NUMERO DE TELEFONO DEL TICKET CREADO</p>
+
+    </div></div>
   
   <div id="MisTickets" class="tab">
     <div class="col-md-10 mx-auto col-lg-5 pt-5 pt-md-7">
@@ -40,12 +45,13 @@ include "./vistas/inc/header.php";
           ?>
         
         <div class="form-floating mb-3">
-            <input type="tel" name="telefono" class="form-control" placeholder="name@example.com" pattern="[0-9]{9}"  required>
-            <label for="tel" class="form-label">Telefono</label>
+            <input type="tel" name="telefono" id="telefono" class="form-control" placeholder="name@example.com" pattern="[0-9]{9}"  required>
+            <label for="telefono" class="form-label">Telefono</label>
+            <!-- <label for="tel" class="form-label">Telefono</label> -->
             <div class="valid-feedback"></div>  
             <div class="invalid-feedback">Complete los Datos</div>
         </div>
-        <button class="w-100 btn btn-lg btn-primary" type="submit">Enviar</button></br></br>
+        <button class="w-100 btn btn-lg btn-primary" type="submit">Enviar</button><br><br>
               
       </form>
     </div>
@@ -54,10 +60,11 @@ include "./vistas/inc/header.php";
 <!-- FIN Mis tickets -->
  
 </main>
+<?php
+include "./vistas/inc/footer.php";
+?>
+
 </body>
 
 <!-- fin cuerpo-->
 
-<?php
-include "./vistas/inc/footer.php";
-?>

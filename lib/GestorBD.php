@@ -8,7 +8,7 @@ class GestorBD
     public function __construct(Type $var = null) {
         $this->var = $var;
     }
-
+  /*
     public function conectar()
     {
         $conf = Configuracion::getInstance();
@@ -16,6 +16,17 @@ class GestorBD
         $u=$conf->getUsuarioBD();
         $p=$conf->getPasswordBD();
         $n=$conf->getNombreBD();
+
+        $s=$conf->getServidorBD();
+        $u=$conf->getUsuarioBD();
+        $p=$conf->getPasswordBD();
+        $n=$conf->getNombreBD();
+
+        
+        $s="sql213.infinityfree.com";
+        $u="if0_36408446";
+        $p="pxG7yuBcUwO";
+        $n="if0_36408446_entornopruebas";
 
 
 
@@ -31,7 +42,24 @@ class GestorBD
         {
             return true;
         }
+*/
+
+        
+        public function conectar()
+    {
+        $this->conn = new mysqli("localhost","root","","gcd");
+        if($this->conn->connect_error!=null)
+        {
+            return  false;
+
+        }
+        else
+        {
+            return true;
+        }
     }
+    
+    
 
     public function getCaso($telefono)
     {

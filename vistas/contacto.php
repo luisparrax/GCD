@@ -24,7 +24,7 @@
 <!-- footer-->
 
   <div id="Contacto"  class="tab">
-  </br></br></br></br></br>
+  <br><br><br><br><br>
     <div class="box-info">
         <h1>CONTACTE CON NOSOTROS</h1>
     </div>
@@ -44,10 +44,11 @@
   </div>
  
 </main>
-</body>
-
-<!-- fin cuerpo-->
 
 <?php 
   include "./vistas/inc/footer.php";
 ?>
+</body>
+
+<!-- fin cuerpo-->
+
